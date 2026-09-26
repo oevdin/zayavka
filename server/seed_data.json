@@ -1,0 +1,936 @@
+{
+  "categories": [
+    {
+      "name": "Полиуретановые пены",
+      "slug": "полиуретановые-пены",
+      "icon": "foam_gun",
+      "sort_order": 0
+    },
+    {
+      "name": "Пено-клеи",
+      "slug": "пено-клеи",
+      "icon": "foam_cloud",
+      "sort_order": 1
+    },
+    {
+      "name": "Герметики",
+      "slug": "герметики",
+      "icon": "caulk_gun",
+      "sort_order": 2
+    },
+    {
+      "name": "Монтажные клеи",
+      "slug": "монтажные-клеи",
+      "icon": "glue_tube",
+      "sort_order": 3
+    },
+    {
+      "name": "Лакокрасочные материалы",
+      "slug": "лакокрасочные-материалы",
+      "icon": "paint_bucket",
+      "sort_order": 4
+    },
+    {
+      "name": "Водоэмульсионные краски, грунтовки, ПВА клеи",
+      "slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "icon": "paint_roller",
+      "sort_order": 5
+    },
+    {
+      "name": "Строительные сухие смеси",
+      "slug": "строительные-сухие-смеси",
+      "icon": "trowel_steps",
+      "sort_order": 6
+    },
+    {
+      "name": "Утеплители",
+      "slug": "утеплители",
+      "icon": "insulation",
+      "sort_order": 7
+    }
+  ],
+  "products": [
+    {
+      "name": "B-HOME Герметик акриловый универсальный 300 мл белый",
+      "price": 75,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p1.jpg"
+    },
+    {
+      "name": "B-HOME Клей монтажный GM1 белый",
+      "price": 160,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p2.jpg"
+    },
+    {
+      "name": "B-HOME Клей монтажный на основе MS-полимера JH28 белый",
+      "price": 280,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p3.jpg"
+    },
+    {
+      "name": "B-HOME Пена-клей быстрый универсальный 60 секунд 750 мл.",
+      "price": 350,
+      "category_slug": "пено-клеи",
+      "photo": "/uploads/products/p4.jpg"
+    },
+    {
+      "name": "B-HOME Профессиональная монтажная пена К91 750 мл. 1000 гр.",
+      "price": 300,
+      "category_slug": "полиуретановые-пены",
+      "photo": "/uploads/products/p5.jpg"
+    },
+    {
+      "name": "B-HOME Профессиональная монтажная пена К91 750 мл. 800 гр.",
+      "price": 280,
+      "category_slug": "полиуретановые-пены",
+      "photo": "/uploads/products/p6.jpg"
+    },
+    {
+      "name": "B-HOME Универ силиконовый герметик J91 300 мл. белый",
+      "price": 130,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p7.jpg"
+    },
+    {
+      "name": "B-HOME Универ силиконовый герметик К92 300 мл. прозрачный",
+      "price": 130,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p8.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Антрацит 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p9.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Белая 0,8 кг",
+      "price": 200,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p10.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Белая 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p11.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Голубая 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p12.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Желтая 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p13.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Зелёная 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p14.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Красная 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p15.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Половая 0,8 кг",
+      "price": 200,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p16.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Половая 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p17.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Серая 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p18.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Синяя 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p19.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Черная 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p20.jpg"
+    },
+    {
+      "name": "Эмаль INFINITI Шоколандная 2,5 кг",
+      "price": 530,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p21.jpg"
+    },
+    {
+      "name": "Vetonit Warm House-TWIN-50х1220х5490/Y/D",
+      "price": 1300,
+      "category_slug": "утеплители",
+      "photo": "/uploads/products/p22.jpg"
+    },
+    {
+      "name": "HAUSER клей строительный универсальный ECO 604 260 мл",
+      "price": 170,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p23.jpg"
+    },
+    {
+      "name": "HAUSER силикон универсальный 260 мл белый",
+      "price": 135,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p24.jpg"
+    },
+    {
+      "name": "HAUSER силикон универсальный 260 мл бесцветный",
+      "price": 135,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p25.jpg"
+    },
+    {
+      "name": "TYTAN FIX UP Монтажный Клей 290 мл",
+      "price": 450,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p26.jpg"
+    },
+    {
+      "name": "TYTAN Анкер Химический Универсальный Двухкомпонентный 300 мл",
+      "price": 540,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p27.jpg"
+    },
+    {
+      "name": "TYTAN Герметик для аквариума и стекла 280 мл беcцветный",
+      "price": 280,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p28.jpg"
+    },
+    {
+      "name": "TYTAN герметик силиконовый санитарный UPG TURBO белый 280 мл",
+      "price": 220,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p29.jpg"
+    },
+    {
+      "name": "TYTAN герметик силиконовый санитарный UPG TURBO прозрачный 280 мл",
+      "price": 220,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p30.jpg"
+    },
+    {
+      "name": "TYTAN Грунтовка MULTIGRUNT 10 л",
+      "price": 950,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p31.jpg"
+    },
+    {
+      "name": "TYTAN Двухкомпонентный клей MDF Kit E 200 мл",
+      "price": 180,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p32.jpg"
+    },
+    {
+      "name": "TYTAN Двухкомпонентный клей MDF Kit E 400 мл",
+      "price": 260,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p33.jpg"
+    },
+    {
+      "name": "TYTAN Клей монтажный 1000 FIX 310 мл",
+      "price": 190,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p34.jpg"
+    },
+    {
+      "name": "TYTAN Клей монтажный CLASSIC FIX 310 мл",
+      "price": 450,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p35.jpg"
+    },
+    {
+      "name": "TYTAN Клей монтажный FAST FIX 290 мл",
+      "price": 500,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p36.jpg"
+    },
+    {
+      "name": "TYTAN Клей монтажный Fix² GT 290 мл белая",
+      "price": 600,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p37.jpg"
+    },
+    {
+      "name": "TYTAN Клей монтажный FIX2 Instant Invisible 290 мл прозрачный",
+      "price": 600,
+      "category_slug": "монтажные-клеи",
+      "photo": "/uploads/products/p38.jpg"
+    },
+    {
+      "name": "TYTAN Пена GUN 750 мл Всесезонная",
+      "price": 360,
+      "category_slug": "полиуретановые-пены",
+      "photo": "/uploads/products/p39.jpg"
+    },
+    {
+      "name": "TYTAN Пена ULTRA FAST 70 870 мл",
+      "price": 580,
+      "category_slug": "полиуретановые-пены",
+      "photo": "/uploads/products/p40.jpg"
+    },
+    {
+      "name": "TYTAN Пена О2 ПРОФ 750 мл",
+      "price": 380,
+      "category_slug": "полиуретановые-пены",
+      "photo": "/uploads/products/p41.jpg"
+    },
+    {
+      "name": "TYTAN пена ПРОФ 65 О2 (750 мл)",
+      "price": 480,
+      "category_slug": "полиуретановые-пены",
+      "photo": "/uploads/products/p42.jpg"
+    },
+    {
+      "name": "TYTAN Пена-клей ПРОФ быстрый универсальный 60 секунд 750 мл",
+      "price": 720,
+      "category_slug": "пено-клеи",
+      "photo": "/uploads/products/p43.jpg"
+    },
+    {
+      "name": "TYTAN Пена-клей ПРОФ универсальный GUN 750 мл серый",
+      "price": 580,
+      "category_slug": "полиуретановые-пены",
+      "photo": "/uploads/products/p44.jpg"
+    },
+    {
+      "name": "TYTAN силикон универсальный 280 мл белый",
+      "price": 170,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p45.jpg"
+    },
+    {
+      "name": "TYTAN силикон универсальный 280 мл бесцветный",
+      "price": 170,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p46.jpg"
+    },
+    {
+      "name": "TYTAN силикон универсальный 280 мл коричневый",
+      "price": 170,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p47.jpg"
+    },
+    {
+      "name": "TYTAN силикон универсальный 280 мл серый",
+      "price": 170,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p48.jpg"
+    },
+    {
+      "name": "TYTAN силикон универсальный 280 мл черный",
+      "price": 170,
+      "category_slug": "герметики",
+      "photo": "/uploads/products/p49.jpg"
+    },
+    {
+      "name": "NIRAT глянцевый яхтный лак 2.3кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p50.jpg"
+    },
+    {
+      "name": "Эмаль COSMO белая 0.8 кг",
+      "price": 220,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p51.jpg"
+    },
+    {
+      "name": "Эмаль COSMO белая 16 кг",
+      "price": 3800,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p52.jpg"
+    },
+    {
+      "name": "Эмаль COSMO белая 2.5 кг",
+      "price": 590,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p53.jpg"
+    },
+    {
+      "name": "Эмаль COSMO половая 0.8 кг",
+      "price": 220,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p54.jpg"
+    },
+    {
+      "name": "Эмаль COSMO половая 16 кг",
+      "price": 3800,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p55.jpg"
+    },
+    {
+      "name": "Эмаль COSMO половая 2.5 кг",
+      "price": 590,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p56.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 3005 светло серая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p57.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 3605 тёмно-шоколадная 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p58.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6040 светло-голубая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p59.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6045 кремовая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p60.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6055 голубая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p61.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6055 синяя 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p62.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6114 серая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p63.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6115 красная 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p64.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6244 коричневая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p65.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6263 темно-шоколадная 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p66.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6275 зеленая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p67.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 6366 бордовая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p68.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE 7016 антрацит 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p69.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE алюминиевая 2.5 кг",
+      "price": 800,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p70.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE белая 0.75 кг",
+      "price": 250,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p71.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE белая 17  кг",
+      "price": 4650,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p72.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE белая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p73.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE желтый 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p74.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE половая 0.8 кг",
+      "price": 250,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p75.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE половая 17.20 кг",
+      "price": 4650,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p76.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE половая 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p77.jpg"
+    },
+    {
+      "name": "Эмаль UNICA ONE черный 2.5 кг",
+      "price": 720,
+      "category_slug": "лакокрасочные-материалы",
+      "photo": "/uploads/products/p78.jpg"
+    },
+    {
+      "name": "UNICA универсальный клей ПВА 0,8 кг",
+      "price": 105,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p79.jpg"
+    },
+    {
+      "name": "PROFI MIX ENERGY GP-171 наливной пол 25 кг",
+      "price": 420,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p80.jpg"
+    },
+    {
+      "name": "PROFI MIX GRANIT GM-255 кафельный клей 25 кг",
+      "price": 370,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p81.jpg"
+    },
+    {
+      "name": "PROFI MIX RODGIPS GP-71 штукатурка 25 кг",
+      "price": 400,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p82.jpg"
+    },
+    {
+      "name": "PROFI MIX STEN PRO GP-71 штукатурка 25 кг",
+      "price": 250,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p83.jpg"
+    },
+    {
+      "name": "PROFI MIX STRONG GM-245 кафельный клей 25 кг",
+      "price": 320,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p84.jpg"
+    },
+    {
+      "name": "PROFI MIX UNIVERSAL GM-113 шпатлевка 25 кг",
+      "price": 390,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p85.jpg"
+    },
+    {
+      "name": "PROFI MIX WHITE PRO GM-177 шпатлевка 20 кг",
+      "price": 400,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p86.jpg"
+    },
+    {
+      "name": "TYTAN BASIC 25 кг",
+      "price": 430,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p87.jpg"
+    },
+    {
+      "name": "TYTAN FINAL 25 кг",
+      "price": 840,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p88.jpg"
+    },
+    {
+      "name": "TYTAN GLADZ 25 кг",
+      "price": 800,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p89.jpg"
+    },
+    {
+      "name": "TYTAN NIVEL 2-20 25 кг",
+      "price": 680,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p90.jpg"
+    },
+    {
+      "name": "TYTAN PERLIT 25 кг",
+      "price": 530,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p91.jpg"
+    },
+    {
+      "name": "TYTAN STANDARD 25 кг",
+      "price": 510,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p92.jpg"
+    },
+    {
+      "name": "TYTAN SUPERFLEX 25 кг",
+      "price": 880,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p93.jpg"
+    },
+    {
+      "name": "MY HOUSE DEKOR (2.5мм) 25кг",
+      "price": 350,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p94.jpg"
+    },
+    {
+      "name": "MY HOUSE ECO BASS наливной пол 25кг",
+      "price": 290,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p95.jpg"
+    },
+    {
+      "name": "MY HOUSE ELASTIC унив-я шпатлевка 25кг",
+      "price": 220,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p96.jpg"
+    },
+    {
+      "name": "MY HOUSE FINISH унив-я шпатлевка 25кг",
+      "price": 230,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p97.jpg"
+    },
+    {
+      "name": "MY HOUSE TYTAN RODBEND  штукатурка гипсовая 30кг",
+      "price": 230,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p98.jpg"
+    },
+    {
+      "name": "MY HOUSE VEGA PLUS  клей для керамических плит 25кг",
+      "price": 205,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p99.jpg"
+    },
+    {
+      "name": "MY HOUSE VEGA клей плиточный 25кг",
+      "price": 170,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p100.jpg"
+    },
+    {
+      "name": "PRONEX GP 50 СЛИМ ПЛАСТ штукатурка гипсовая 30 кг",
+      "price": 420,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p101.jpg"
+    },
+    {
+      "name": "PRONEX KS 9 КЕРАМИК  клей для керамической плитки 25 кг",
+      "price": 430,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p102.jpg"
+    },
+    {
+      "name": "PRONEX WR 65 ПРИМА ПЛАСТ шпатлевка гипсовая 25 кг",
+      "price": 550,
+      "category_slug": "строительные-сухие-смеси",
+      "photo": "/uploads/products/p103.jpg"
+    },
+    {
+      "name": "Грунт UNICA бетоноконтакт 12 кг",
+      "price": 840,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p104.jpg"
+    },
+    {
+      "name": "Грунт UNICA бетоноконтакт 3 кг",
+      "price": 275,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p105.jpg"
+    },
+    {
+      "name": "Грунт UNICA бетоноконтакт 6 кг",
+      "price": 480,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p106.jpg"
+    },
+    {
+      "name": "Грунтовка праймер ProNeX 10 кг (канистр)",
+      "price": 685,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p107.jpg"
+    },
+    {
+      "name": "Грунтовка праймер UNICA 10 кг (баклашка)",
+      "price": 200,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p108.jpg"
+    },
+    {
+      "name": "Грунтовка праймер UNICA 10 кг (ведро)",
+      "price": 295,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p109.jpg"
+    },
+    {
+      "name": "Грунтовка праймер UNICA 10 кг (канистр)",
+      "price": 280,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p110.jpg"
+    },
+    {
+      "name": "Грунтовка праймер UNICA 5 кг (баклашка)",
+      "price": 120,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p111.jpg"
+    },
+    {
+      "name": "Затирка для швов плитки UNICA FUGA LITE белая 1 кг",
+      "price": 105,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p112.jpg"
+    },
+    {
+      "name": "Затирка для швов плитки UNICA FUGA LITE белая 3 кг",
+      "price": 255,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p113.jpg"
+    },
+    {
+      "name": "Краска ВЭ ProNex моющая 14 кг",
+      "price": 1050,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p114.jpg"
+    },
+    {
+      "name": "Краска ВЭ ProNex моющая 3 кг",
+      "price": 270,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p115.jpg"
+    },
+    {
+      "name": "Краска ВЭ ProNex моющая 7 кг",
+      "price": 570,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p116.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая PREMIUM CLASS 14 кг",
+      "price": 1050,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p117.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая PREMIUM CLASS 25 кг",
+      "price": 1800,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p118.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая PREMIUM CLASS 3 кг",
+      "price": 270,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p119.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая PREMIUM CLASS 7 кг",
+      "price": 570,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p120.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Eko 10 кг",
+      "price": 480,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p121.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Eko 14 кг",
+      "price": 600,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p122.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Eko 25 кг",
+      "price": 1100,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p123.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Eko 3 кг",
+      "price": 180,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p124.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Eko 5 кг",
+      "price": 270,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p125.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Eko 7 кг",
+      "price": 340,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p126.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Italiano 1 кг",
+      "price": 120,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p127.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Italiano 10 кг",
+      "price": 740,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p128.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Italiano 14 кг",
+      "price": 1050,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p129.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Italiano 25 кг",
+      "price": 1800,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p130.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Italiano 3 кг",
+      "price": 270,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p131.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Italiano 5 кг",
+      "price": 370,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p132.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Italiano 7 кг",
+      "price": 570,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p133.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Standart 1 кг",
+      "price": 95,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p134.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Standart 10 кг",
+      "price": 480,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p135.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Standart 14 кг",
+      "price": 600,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p136.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Standart 25 кг",
+      "price": 1100,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p137.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Standart 3 кг",
+      "price": 180,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p138.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Standart 5 кг",
+      "price": 270,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p139.jpg"
+    },
+    {
+      "name": "Краска ВЭ моющая UNICA Standart 7 кг",
+      "price": 340,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p140.jpg"
+    },
+    {
+      "name": "Краска ВЭ фасадная UNICA 10 кг",
+      "price": 820,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p141.jpg"
+    },
+    {
+      "name": "Краска ВЭ фасадная UNICA 14 кг",
+      "price": 1150,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p142.jpg"
+    },
+    {
+      "name": "Краска ВЭ фасадная UNICA 25 кг",
+      "price": 1900,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p143.jpg"
+    },
+    {
+      "name": "Краска ВЭ фасадная UNICA 3 кг",
+      "price": 300,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p144.jpg"
+    },
+    {
+      "name": "Краска ВЭ фасадная UNICA 7 кг",
+      "price": 600,
+      "category_slug": "водоэмульсионные-краски-грунтовки-пва-клеи",
+      "photo": "/uploads/products/p145.jpg"
+    },
+    {
+      "name": "Фольга 0,5мм 30 метр",
+      "price": 750,
+      "category_slug": "утеплители",
+      "photo": "/uploads/products/p146.jpg"
+    },
+    {
+      "name": "Фольга 0,7мм 40 метр",
+      "price": 1100,
+      "category_slug": "утеплители",
+      "photo": "/uploads/products/p147.jpg"
+    }
+  ]
+}
