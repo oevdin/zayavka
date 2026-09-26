@@ -2,7 +2,7 @@ services:
   - type: web
     name: unica-app
     runtime: node
-    plan: starter
+    plan: free
     region: frankfurt
     buildCommand: npm install
     startCommand: npm run seed && npm start
@@ -13,9 +13,3 @@ services:
         value: admin
       - key: SEED_ADMIN_PASSWORD
         sync: false
-      - key: DATA_DIR
-        value: /var/data
-    disk:
-      name: unica-data
-      mountPath: /var/data
-      sizeGB: 1
