@@ -76,7 +76,7 @@ router.get('/products', (req, res) => {
 });
 
 router.post('/products', requireAuth, requireAdmin, upload.single('photo'), async (req, res) => {
-  const { name, price, category_id } = req.body || {};
+  const { name, price, category_id, description } = req.body || {};
   if (!name || !name.trim()) return res.status(400).json({ error: 'name_required' });
   if (!category_id) return res.status(400).json({ error: 'category_id_required' });
 
@@ -85,8 +85,8 @@ router.post('/products', requireAuth, requireAdmin, upload.single('photo'), asyn
     photoPath = await saveProductPhoto(req.file.buffer);
   }
 
-  const info = db.prepare('INSERT INTO products (category_id, name, price, photo) VALUES (?,?,?,?)')
-    .run(Number(category_id), name.trim(), price ? Number(price) : null, photoPath);
+  const info = db.prepare('INSERT INTO products (category_id, name, price, photo, description) VALUES (?,?,?,?,?)')
+    .run(Number(category_id), name.trim(), price ? Number(price) : null, photoPath, description || null);
   res.status(201).json(db.prepare('SELECT * FROM products WHERE id = ?').get(info.lastInsertRowid));
 });
 
@@ -95,11 +95,12 @@ router.patch('/products/:id', requireAuth, requireAdmin, upload.single('photo'),
   const existing = db.prepare('SELECT * FROM products WHERE id = ?').get(id);
   if (!existing) return res.status(404).json({ error: 'not_found' });
 
-  const { name, price, category_id } = req.body || {};
+  const { name, price, category_id, description } = req.body || {};
   const fields = [], values = [];
   if (name !== undefined) { fields.push('name = ?'); values.push(name); }
   if (price !== undefined) { fields.push('price = ?'); values.push(price === '' ? null : Number(price)); }
   if (category_id !== undefined) { fields.push('category_id = ?'); values.push(Number(category_id)); }
+  if (description !== undefined) { fields.push('description = ?'); values.push(description); }
 
   if (req.file) {
     const photoPath = await saveProductPhoto(req.file.buffer);

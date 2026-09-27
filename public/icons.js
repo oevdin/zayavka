@@ -14,7 +14,7 @@ const ICON_LIB = {
   wood: '<rect x="10" y="24" width="44" height="16" rx="2"/><path d="M10 32 L54 32"/><circle cx="18" cy="32" r="1.6" fill="currentColor" stroke="none"/><circle cx="46" cy="32" r="1.6" fill="currentColor" stroke="none"/>',
 };
 
-const ICON_CHOICES = ['foam_gun','foam_cloud','caulk_gun','glue_tube','trowel_steps','paint_bucket','paint_roller','insulation','brush','tape','wood','box'];
+const ICON_CHOICES = ['foam_gun','foam_cloud','caulk_gun','glue_tube','trowel_steps','paint_bucket','paint_roller','insulation','drop','brush','tape','wood','box'];
 
 function iconSvg(key, cls) {
   const p = ICON_LIB[key] || ICON_LIB.box;

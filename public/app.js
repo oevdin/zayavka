@@ -282,18 +282,38 @@ function renderProductGrid(products) {
     const inCart = Cart.find(p.id);
     const qty = inCart ? inCart.qty : 0;
     html += `<div class="prod-card">
-      <div class="prod-photo">${p.photo ? `<img src="${p.photo}" alt="">` : photoPlaceholder()}</div>
-      <div class="prod-body">
-        <h4 class="prod-name">${esc(p.name)}</h4>
-        <div class="prod-price">${fmtPrice(p.price)}<small>сом</small></div>
-        <div class="prod-add" id="add-${p.id}">
-          ${qty > 0 ? qtyStepperHtml(p, qty) : `<button class="add-cart-btn" onclick='addToCart(${JSON.stringify(p)})'>${cartIcon()} В заявку</button>`}
+      <div class="prod-clickable" onclick='openProductDetail(${JSON.stringify(p)})'>
+        <div class="prod-photo">${p.photo ? `<img src="${p.photo}" alt="">` : photoPlaceholder()}</div>
+        <div class="prod-body">
+          <h4 class="prod-name">${esc(p.name)}</h4>
+          <div class="prod-price">${fmtPrice(p.price)}<small>сом</small></div>
         </div>
+      </div>
+      <div class="prod-add" data-add-for="${p.id}">
+        ${qty > 0 ? qtyStepperHtml(p, qty) : `<button class="add-cart-btn" onclick='addToCart(${JSON.stringify(p)})'>${cartIcon()} В заявку</button>`}
       </div>
     </div>`;
   }
   html += `</div>`;
   return html;
+}
+function openProductDetail(p) {
+  const inCart = Cart.find(p.id);
+  const qty = inCart ? inCart.qty : 0;
+  renderModal(`
+    <button class="modal-close" onclick="closeModal()">${closeIcon()}</button>
+    <div class="product-detail">
+      <div class="pd-photo">${p.photo ? `<img src="${p.photo}" alt="">` : photoPlaceholder()}</div>
+      <div class="pd-info">
+        <h3>${esc(p.name)}</h3>
+        <div class="pd-price">${fmtPrice(p.price)}<small>сом</small></div>
+        <p class="pd-desc">${p.description ? esc(p.description) : 'Описание уточняется.'}</p>
+        <div class="prod-add" data-add-for="${p.id}" style="margin-top:16px;">
+          ${qty > 0 ? qtyStepperHtml(p, qty) : `<button class="add-cart-btn" onclick='addToCart(${JSON.stringify(p)})'>${cartIcon()} В заявку</button>`}
+        </div>
+      </div>
+    </div>
+  `, 'modal-wide');
 }
 function qtyStepperHtml(p, qty) {
   return `<div class="qty-stepper">
@@ -317,17 +337,19 @@ function changeCartQty(productId, qty) {
   if (currentRoute.name === 'cart') renderCartView();
 }
 function refreshProductCardAdd(productId) {
-  const el = document.getElementById('add-' + productId);
-  if (!el) return;
+  const els = document.querySelectorAll('[data-add-for="' + productId + '"]');
+  if (!els.length) return;
   const item = Cart.find(productId);
+  let inner;
   if (!item) {
     // need original product data to rebuild the button — find it from cache
     const allProducts = Object.values(PRODUCTS_CACHE).flat();
     const p = allProducts.find(x => x.id === productId);
-    el.innerHTML = p ? `<button class="add-cart-btn" onclick='addToCart(${JSON.stringify(p)})'>${cartIcon()} В заявку</button>` : '';
+    inner = p ? `<button class="add-cart-btn" onclick='addToCart(${JSON.stringify(p)})'>${cartIcon()} В заявку</button>` : '';
   } else {
-    el.innerHTML = qtyStepperHtml({ id: productId }, item.qty);
+    inner = qtyStepperHtml({ id: productId }, item.qty);
   }
+  els.forEach(el => { el.innerHTML = inner; });
 }
 
 /* ---- cart / draft order ---- */
@@ -778,6 +800,7 @@ function openProductFormModal(id, categoryId) {
       <div class="field"><label>Раздел</label><select id="fCategory">${catOptions}</select></div>
       <div class="field"><label>Наименование</label><input type="text" id="fName" value="${editing ? esc(editing.name) : ''}" placeholder="Название товара"></div>
       <div class="field"><label>Цена, сом</label><input type="number" id="fPrice" value="${editing ? (editing.price ?? '') : ''}" placeholder="0"></div>
+      <div class="field"><label>Описание</label><textarea id="fDescription" placeholder="Короткое описание для карточки товара">${editing && editing.description ? esc(editing.description) : ''}</textarea></div>
       <div class="modal-actions">
         <button class="btn" onclick="closeModal()">Отмена</button>
         <button class="btn primary" onclick="saveProduct(${editing ? editing.id : 'null'}, ${editing ? editing.category_id : categoryId})">Сохранить</button>
@@ -796,6 +819,7 @@ async function saveProduct(id, oldCategoryId) {
   const name = document.getElementById('fName').value.trim();
   const price = document.getElementById('fPrice').value;
   const categoryId = document.getElementById('fCategory').value;
+  const description = document.getElementById('fDescription').value.trim();
   const photoFile = document.getElementById('photoInput').files[0];
   if (!name) { showToast('Укажите наименование товара', true); return; }
 
@@ -803,6 +827,7 @@ async function saveProduct(id, oldCategoryId) {
   form.append('name', name);
   form.append('price', price);
   form.append('category_id', categoryId);
+  form.append('description', description);
   if (photoFile) form.append('photo', photoFile);
 
   try {
@@ -991,10 +1016,10 @@ async function doChangePassword() {
 }
 
 function closeModal() { document.getElementById('modalRoot').innerHTML = ''; }
-function renderModal(inner) {
+function renderModal(inner, extraClass) {
   document.getElementById('modalRoot').innerHTML = `
     <div class="modal-overlay" onclick="if(event.target===this) closeModal()">
-      <div class="modal">${inner}</div>
+      <div class="modal ${extraClass || ''}">${inner}</div>
     </div>`;
 }
 function showToast(msg, isErr, duration) {
@@ -1018,6 +1043,7 @@ function adminIcon() { return `<svg viewBox="0 0 24 24" fill="none" stroke-width
 function boxIcon() { return `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>`; }
 function notFoundIcon() { return `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg>`; }
 function checkIcon() { return `<svg viewBox="0 0 24 24"><path d="M20 6 L9 17 L4 12"/></svg>`; }
+function closeIcon() { return `<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M18 6 L6 18"/><path d="M6 6 L18 18"/></svg>`; }
 function warnIcon() { return `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8 L12 13"/><circle cx="12" cy="16" r="0.6" fill="#fff"/></svg>`; }
 
 /* ============================================================

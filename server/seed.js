@@ -12,33 +12,48 @@ function seedCatalog() {
   }
   const { categories, products } = JSON.parse(fs.readFileSync(seedPath, 'utf-8'));
 
-  const catCount = db.prepare('SELECT COUNT(*) AS c FROM categories').get().c;
-  if (catCount > 0) {
-    console.log('Categories already exist — skipping catalog seed (delete data/unica.db to reseed).');
-    return;
-  }
-
+  // categories: insert new ones, leave existing name/icon/sort_order untouched
+  // (admins may have customized icons in the UI — a data refresh shouldn't undo that)
   const insertCat = db.prepare('INSERT INTO categories (name, slug, icon, sort_order) VALUES (?,?,?,?)');
+  const getCatBySlug = db.prepare('SELECT id FROM categories WHERE slug = ?');
   const slugToId = {};
-  const insertCats = db.transaction((cats) => {
+  const upsertCats = db.transaction((cats) => {
     for (const c of cats) {
-      const info = insertCat.run(c.name, c.slug, c.icon, c.sort_order);
-      slugToId[c.slug] = info.lastInsertRowid;
+      const existing = getCatBySlug.get(c.slug);
+      if (existing) {
+        slugToId[c.slug] = existing.id;
+      } else {
+        const info = insertCat.run(c.name, c.slug, c.icon, c.sort_order);
+        slugToId[c.slug] = info.lastInsertRowid;
+      }
     }
   });
-  insertCats(categories);
+  upsertCats(categories);
 
-  const insertProd = db.prepare('INSERT INTO products (category_id, name, price, photo) VALUES (?,?,?,?)');
-  const insertProds = db.transaction((prods) => {
+  // products: matched by (category, name) — update price/description/photo if
+  // the product already exists, insert if it's new. This makes it safe to
+  // re-run `npm run seed` whenever the price list changes.
+  const findProd = db.prepare('SELECT id, photo FROM products WHERE category_id = ? AND name = ?');
+  const insertProd = db.prepare('INSERT INTO products (category_id, name, price, photo, description) VALUES (?,?,?,?,?)');
+  const updateProd = db.prepare('UPDATE products SET price = ?, description = ?, photo = COALESCE(?, photo) WHERE id = ?');
+  let inserted = 0, updated = 0;
+  const upsertProds = db.transaction((prods) => {
     for (const p of prods) {
       const catId = slugToId[p.category_slug];
       if (!catId) continue;
-      insertProd.run(catId, p.name, p.price, p.photo);
+      const existing = findProd.get(catId, p.name);
+      if (existing) {
+        updateProd.run(p.price, p.description || null, p.photo || null, existing.id);
+        updated++;
+      } else {
+        insertProd.run(catId, p.name, p.price, p.photo, p.description || null);
+        inserted++;
+      }
     }
   });
-  insertProds(products);
+  upsertProds(products);
 
-  console.log(`Seeded ${categories.length} categories and ${products.length} products.`);
+  console.log(`Catalog synced: ${inserted} new products, ${updated} updated.`);
 }
 
 function seedAdmin() {

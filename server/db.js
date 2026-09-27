@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS products (
   name TEXT NOT NULL,
   price INTEGER,
   photo TEXT,
+  description TEXT,
   active INTEGER NOT NULL DEFAULT 1,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
@@ -73,5 +74,11 @@ CREATE INDEX IF NOT EXISTS idx_products_category ON products(category_id);
 CREATE INDEX IF NOT EXISTS idx_orders_contractor ON orders(contractor_id);
 CREATE INDEX IF NOT EXISTS idx_order_items_order ON order_items(order_id);
 `);
+
+// --- migrations for databases created before a column existed ---
+const productCols = db.prepare("PRAGMA table_info(products)").all().map(c => c.name);
+if (!productCols.includes('description')) {
+  db.exec('ALTER TABLE products ADD COLUMN description TEXT');
+}
 
 module.exports = db;
